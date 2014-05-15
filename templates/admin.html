@@ -1,0 +1,898 @@
+<html>
+<head>
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+    <title>Welcome to Admin Page</title>
+<script src="/static/javascripts/jquery.js"></script>
+<script type="text/javascript">
+function doo()
+{
+confirm('Are You Sure ?');
+}
+
+function reloadPage()
+{
+Â Â location.reload()
+}
+
+</script>
+<script>
+$(document).ready(function(){
+  
+  $("#new_account").hide();
+  $("#delete_account").hide();
+  $("#new_user").hide();
+  $("#delete_user").hide();
+  $("#accounts").hide();
+  $("#developers").hide();
+  $("#heading1").hide();
+  $("#heading2").hide();
+  $("#uapk").hide();
+  $("#heading3").hide();
+  $("#search_dev").hide();
+  $("#search_account").hide();
+  $("#upload_apk").hide();
+  $("#updatecollisionform").hide();
+
+
+
+  $("#td0").click(function(){
+    $("#new_account").show();
+	$("#delete_account").hide();
+	$("#new_user").hide();
+	$("#delete_user").hide();
+    $("#accounts").hide();
+    $("#developers").hide();
+    $("#heading1").hide();
+    $("#heading2").hide();
+    $("#uapk").hide();
+    $("#heading3").hide();
+    $("#search_dev").hide();
+    $("#heading4").hide();
+    $("#duapk").hide();
+    $("#search_account").hide();
+    $("#heading5").hide();
+    $("#acapk").hide();
+    $("#existaccount").hide();
+    $("#notexistaccount").hide();
+    $("#existdeveloper").hide();
+    $("#notexistdeveloper").hide();
+    $("#adminsave").hide();
+    $("#apkdev").hide();
+    $("#inputinvalid").hide();
+    $("#createaccount").hide();
+    $("#deleteaccount").hide();
+    $("#adddeveloper").hide();
+    $("#deletedeveloper").hide();
+    $("#upload_apk").hide();
+    $("#uploadapkadmin").hide();
+    $("#incorrectfile").hide();
+    $("#updatecollisionform").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#testapk").hide();
+   });
+  
+  $("#td2").click(function(){
+    $("#delete_account").show();
+	$("#new_account").hide();
+	$("#new_user").hide();
+	$("#delete_user").hide();
+    $("#accounts").hide();
+    $("#developers").hide();
+    $("#heading1").hide();
+    $("#heading2").hide();
+    $("#uapk").hide();
+    $("#heading3").hide();
+    $("#search_dev").hide();
+    $("#heading4").hide();
+    $("#duapk").hide();
+    $("#search_account").hide();
+    $("#heading5").hide();
+    $("#acapk").hide();
+    $("#existaccount").hide();
+    $("#notexistaccount").hide();
+    $("#existdeveloper").hide();
+    $("#notexistdeveloper").hide();
+    $("#adminsave").hide();
+    $("#apkdev").hide();
+    $("#inputinvalid").hide();
+    $("#createaccount").hide();
+    $("#deleteaccount").hide();
+    $("#adddeveloper").hide();
+    $("#deletedeveloper").hide();
+    $("#upload_apk").hide();
+    $("#uploadapkadmin").hide();
+    $("#incorrectfile").hide();
+    $("#updatecollisionform").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#testapk").hide();
+  });
+  
+  $("#td4").click(function(){
+    $("#new_account").hide();
+	$("#delete_account").hide();
+	$("#new_user").show();
+	$("#delete_user").hide();
+    $("#accounts").hide();
+    $("#developers").hide();
+    $("#heading1").hide();
+    $("#heading2").hide();
+    $("#uapk").hide();
+    $("#heading3").hide();
+    $("#search_dev").hide();
+    $("#heading4").hide();
+    $("#duapk").hide();
+    $("#search_account").hide();
+    $("#heading5").hide();
+    $("#acapk").hide();
+    $("#existaccount").hide();
+    $("#notexistaccount").hide();
+    $("#existdeveloper").hide();
+    $("#notexistdeveloper").hide();
+    $("#adminsave").hide();
+    $("#apkdev").hide();
+    $("#inputinvalid").hide();
+    $("#createaccount").hide();
+    $("#deleteaccount").hide();
+    $("#adddeveloper").hide();
+    $("#deletedeveloper").hide();
+    $("#upload_apk").hide();
+    $("#uploadapkadmin").hide();
+    $("#incorrectfile").hide();
+    $("#updatecollisionform").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#testapk").hide();
+  });
+  
+  $("#td5").click(function(){
+    $("#new_account").hide();
+	$("#delete_account").hide();
+	$("#new_user").hide();
+	$("#delete_user").show();
+    $("#accounts").hide();
+    $("#developers").hide();
+    $("#heading1").hide();
+    $("#heading2").hide();
+    $("#uapk").hide();
+    $("#heading3").hide();
+    $("#search_dev").hide();
+    $("#heading4").hide();
+    $("#duapk").hide();
+    $("#search_account").hide();
+    $("#heading5").hide();
+    $("#acapk").hide();
+    $("#existaccount").hide();
+    $("#notexistaccount").hide();
+    $("#existdeveloper").hide();
+    $("#notexistdeveloper").hide();
+    $("#adminsave").hide();
+    $("#apkdev").hide();
+    $("#inputinvalid").hide();
+    $("#createaccount").hide();
+    $("#deleteaccount").hide();
+    $("#adddeveloper").hide();
+    $("#deletedeveloper").hide();
+    $("#upload_apk").hide();
+    $("#uploadapkadmin").hide();
+    $("#incorrectfile").hide();
+    $("#updatecollisionform").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#testapk").hide();
+  });
+
+
+  $("#td1").click(function(){
+    $("#new_account").hide();
+	$("#delete_account").hide();
+	$("#new_user").hide();
+	$("#delete_user").hide();
+    $("#accounts").show();
+    $("#developers").hide();
+    $("#heading1").show();
+    $("#heading2").hide();
+    $("#uapk").hide();
+    $("#heading3").hide();
+    $("#search_dev").hide();
+    $("#heading4").hide();
+    $("#duapk").hide();
+    $("#search_account").hide();
+    $("#heading5").hide();
+    $("#acapk").hide();
+    $("#existaccount").hide();
+    $("#notexistaccount").hide();
+    $("#existdeveloper").hide();
+    $("#notexistdeveloper").hide();
+    $("#adminsave").hide();
+    $("#apkdev").hide();
+    $("#inputinvalid").hide();
+    $("#createaccount").hide();
+    $("#deleteaccount").hide();
+    $("#adddeveloper").hide();
+    $("#deletedeveloper").hide();
+    $("#upload_apk").hide();
+    $("#uploadapkadmin").hide();
+    $("#incorrectfile").hide();
+    $("#updatecollisionform").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#testapk").hide();
+  });
+
+  $("#td3").click(function(){
+    $("#new_account").hide();
+	$("#delete_account").hide();
+	$("#new_user").hide();
+	$("#delete_user").hide();
+    $("#accounts").hide();
+    $("#developers").show();
+    $("#heading1").hide();
+    $("#heading2").show();
+    $("#uapk").hide();
+    $("#heading3").hide();
+    $("#search_dev").hide();
+    $("#heading4").hide();
+    $("#duapk").hide();
+    $("#search_account").hide();
+    $("#heading5").hide();
+    $("#acapk").hide();
+    $("#existaccount").hide();
+    $("#notexistaccount").hide();
+    $("#existdeveloper").hide();
+    $("#notexistdeveloper").hide();
+    $("#adminsave").hide();
+    $("#apkdev").hide();
+    $("#inputinvalid").hide();
+    $("#createaccount").hide();
+    $("#deleteaccount").hide();
+    $("#adddeveloper").hide();
+    $("#deletedeveloper").hide();
+    $("#upload_apk").hide();
+    $("#uploadapkadmin").hide();
+    $("#incorrectfile").hide();
+    $("#updatecollisionform").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#testapk").hide();
+  });
+
+  $("#td6").click(function(){
+    $("#new_account").hide();
+	$("#delete_account").hide();
+	$("#new_user").hide();
+	$("#delete_user").hide();
+    $("#accounts").hide();
+    $("#developers").hide();
+    $("#heading1").hide();
+    $("#heading2").hide();
+    $("#uapk").show();
+    $("#heading3").show();
+    $("#search_dev").hide();
+    $("#heading4").hide();
+    $("#duapk").hide();
+    $("#search_account").hide();
+    $("#heading5").hide();
+    $("#acapk").hide();
+    $("#existaccount").hide();
+    $("#notexistaccount").hide();
+    $("#existdeveloper").hide();
+    $("#notexistdeveloper").hide();
+    $("#adminsave").hide();
+    $("#apkdev").hide();
+    $("#inputinvalid").hide();
+    $("#createaccount").hide();
+    $("#deleteaccount").hide();
+    $("#adddeveloper").hide();
+    $("#deletedeveloper").hide();
+    $("#upload_apk").hide();
+    $("#uploadapkadmin").hide();
+    $("#incorrectfile").hide();
+    $("#updatecollisionform").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#testapk").hide();
+  });
+
+  $("#td7").click(function(){
+    $("#new_account").hide();
+	$("#delete_account").hide();
+	$("#new_user").hide();
+	$("#delete_user").hide();
+    $("#accounts").hide();
+    $("#developers").hide();
+    $("#heading1").hide();
+    $("#heading2").hide();
+    $("#uapk").hide();
+    $("#heading3").hide();
+    $("#search_dev").show();
+    $("#search_account").hide();
+    $("#heading4").hide();
+    $("#duapk").hide();
+    $("#heading5").hide();
+    $("#acapk").hide();
+    $("#existaccount").hide();
+    $("#notexistaccount").hide();
+    $("#existdeveloper").hide();
+    $("#notexistdeveloper").hide();
+    $("#adminsave").hide();
+    $("#apkdev").hide();
+    $("#inputinvalid").hide();
+    $("#createaccount").hide();
+    $("#deleteaccount").hide();
+    $("#adddeveloper").hide();
+    $("#deletedeveloper").hide();
+    $("#upload_apk").hide();
+    $("#uploadapkadmin").hide();
+    $("#incorrectfile").hide();
+    $("#updatecollisionform").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#testapk").hide();
+  });
+
+  $("#td8").click(function(){
+    $("#new_account").hide();
+	$("#delete_account").hide();
+	$("#new_user").hide();
+	$("#delete_user").hide();
+    $("#accounts").hide();
+    $("#developers").hide();
+    $("#heading1").hide();
+    $("#heading2").hide();
+    $("#uapk").hide();
+    $("#heading3").hide();
+    $("#search_dev").hide();
+    $("#search_account").show();
+    $("#heading4").hide();
+    $("#duapk").hide();
+    $("#heading5").hide();
+    $("#acapk").hide();
+    $("#existaccount").hide();
+    $("#notexistaccount").hide();
+    $("#existdeveloper").hide();
+    $("#notexistdeveloper").hide();
+    $("#adminsave").hide();
+    $("#apkdev").hide();
+    $("#inputinvalid").hide();
+    $("#createaccount").hide();
+    $("#deleteaccount").hide();
+    $("#adddeveloper").hide();
+    $("#deletedeveloper").hide();
+    $("#upload_apk").hide();
+    $("#uploadapkadmin").hide();
+    $("#incorrectfile").hide();
+    $("#updatecollisionform").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#testapk").hide();
+  });
+
+   $("#td9").click(function(){
+    $("#new_account").hide();
+	$("#delete_account").hide();
+	$("#new_user").hide();
+	$("#delete_user").hide();
+    $("#accounts").hide();
+    $("#developers").hide();
+    $("#heading1").hide();
+    $("#heading2").hide();
+    $("#uapk").hide();
+    $("#heading3").hide();
+    $("#search_dev").hide();
+    $("#search_account").hide();
+    $("#heading4").hide();
+    $("#duapk").hide();
+    $("#heading5").hide();
+    $("#acapk").hide();
+    $("#existaccount").hide();
+    $("#notexistaccount").hide();
+    $("#existdeveloper").hide();
+    $("#notexistdeveloper").hide();
+    $("#adminsave").hide();
+    $("#apkdev").hide();
+    $("#inputinvalid").hide();
+    $("#createaccount").hide();
+    $("#deleteaccount").hide();
+    $("#adddeveloper").hide();
+    $("#deletedeveloper").hide();
+    $("#upload_apk").show();
+    $("#uploadapkadmin").hide();
+    $("#incorrectfile").hide();
+    $("#updatecollisionform").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#testapk").hide();
+   });
+
+  $("#td10").click(function(){
+    $("#new_account").hide();
+	$("#delete_account").hide();
+	$("#new_user").hide();
+	$("#delete_user").hide();
+    $("#accounts").hide();
+    $("#developers").hide();
+    $("#heading1").hide();
+    $("#heading2").hide();
+    $("#uapk").show();
+    $("#heading3").hide();
+    $("#search_dev").hide();
+    $("#search_account").hide();
+    $("#heading4").hide();
+    $("#duapk").hide();
+    $("#heading5").hide();
+    $("#acapk").hide();
+    $("#existaccount").hide();
+    $("#notexistaccount").hide();
+    $("#existdeveloper").hide();
+    $("#notexistdeveloper").hide();
+    $("#adminsave").hide();
+    $("#apkdev").hide();
+    $("#inputinvalid").hide();
+    $("#createaccount").hide();
+    $("#deleteaccount").hide();
+    $("#adddeveloper").hide();
+    $("#deletedeveloper").hide();
+    $("#upload_apk").hide();
+    $("#uploadapkadmin").hide();
+    $("#incorrectfile").hide();
+    $("#updatecollisionform").show();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#testapk").hide();
+  });
+    $("#updateresourcesubmit").click(function(){
+
+     $("#checkcollision").show();
+   });
+
+});
+	   					   
+				   
+</script> 
+
+
+</head>
+<style>
+#a
+{
+height:30%;
+width:30%;
+left:0px;
+top:20px;
+background-repeat:no-repeat;
+}
+
+#b
+{
+left:0px;
+top:0px;
+width:100%;
+height:1%;
+
+}
+
+#table1
+{
+position:absolute;
+font:bold 15px arial,sans-serif;
+left:2%;
+top:30%;
+}
+
+#buttons
+{
+position:absolute;
+font:bold 15px arial,sans-serif;
+left:45%;
+top:50%;
+height:4%;
+width:10%;
+}
+
+#c
+{
+position:absolute;
+font:bold 25px arial,sans-serif;
+left:30%;
+top:15%;
+}
+#c1
+{
+position:absolute;
+font:bold 25px arial,sans-serif;
+left:45%;
+top:10%;
+}
+
+
+#d
+{
+position:absolute;
+font:bold 15px arial,sans-serif;
+left:90%;
+top:5%;
+}
+
+#e
+{
+position:absolute;
+left:30%;
+top:20%;
+height:60%;
+width:50%;
+}
+}
+#create
+{
+position:absolute;
+font:bold 15px arial,sans-serif;
+left:50%;
+top:20%;
+height:80%;
+width:50%; 
+}
+
+#new_account,#delete_account,#new_user,#delete_user,#search_dev,#search_account
+{
+position:absolute;
+font:bold 20px arial,sans-serif;
+left:30%;
+top:30%;
+height:30%;
+width:50%;
+}
+
+#heading1,#heading2,#heading3,#heading4,#heading5
+{
+position:absolute;
+left:30%;top:20%;height:30%;width:50%;
+}
+body
+{
+}
+
+
+#upload_apk
+{
+position:absolute;
+font:bold 20px arial,sans-serif;
+left:30%;
+top:30%;
+height:30%;
+width:50%;
+}
+
+</style
+
+<body onload="reloadPage()">
+<p id="b"></p>
+
+<p id="a"></p>
+
+<p id="c1">Welcome , Admin <p>
+<p id="c">Your last activity was at : {{ log[0]['logintime'] }} </p>
+
+<p id="d" onclick="doo();"><a href="/logout">SIGNOUT</a></p>
+
+<table id="table1" border="1" cellpadding="5px" style="cursor:pointer;">
+<tr>
+<td id="td0">CREATE ACCOUNT</td>
+</tr>
+
+<tr>
+<td id="td1">VIEW ACCOUNTS</td>
+</tr>
+
+<tr>
+<td id="td2">DELETE ACCOUNT</td>
+</tr>
+
+<tr>
+<td id="td3">VIEW DEVELOPERS</td>
+</tr>
+
+<tr>
+<td id="td4">ADD DEVELOPERS</td>
+</tr>
+
+<tr>
+<td id="td5">DELETE DEVELOPERS</td>
+</tr>
+
+<tr>
+<td id="td6">VIEW UPLOADED PACKAGES</td>
+</tr>
+
+<tr>
+<td id="td7">SEARCH PACKAGES BY DEVELOPER</td>
+</tr>
+
+<tr>
+<td id="td8">SEARCH PACKAGES BY ACCOUNT</td>
+</tr>
+
+<tr>
+<td id="td9">UPLOAD PACKAGES</td>
+</tr>
+
+<tr>
+<td id="td10">UPDATE COLLISIONS</td>
+</tr>
+
+
+</table>
+
+<form action="/account" method="post" id="new_account" enctype="multipart/form-data" >
+<u><center>CREATE ACCOUNT</center></u>
+<br><br>
+Enter Account Name : <input type=text placeholder="Enter a Unique Name" name="newaccountname" style="position:absolute;top:24%;height:15%;width:40%;font:bold 20px arial,sans-serif;"></input>
+<br><br>
+Upload KeyStore File:<input type="file" name="keystorefile" style="height:15%;width:60%;position:absolute;left:40%;font:bold 15px arial,sans-serif;"></input>
+<br><br>
+<center>
+<input type="submit" name="submits" style="height:15%;width:20%;position:absolute;left:30%;font:bold 15px arial,sans-serif;"></input>
+</center>
+</form>
+
+<form action="/account" method="post" id="delete_account" >
+<u><center>DELETE ACCOUNT</center></u>
+<br><br>
+Enter Account Name : <input type=text placeholder="Enter Account Name" name="accountname" style="position:absolute;top:24%;height:15%;width:40%;font:bold 20px arial,sans-serif;"></input>
+<br><br>
+<center>
+<input type="submit" style="height:15%;width:20%;position:absolute;left:30%;font:bold 15px arial,sans-serif;"></input>
+</center>
+</form>
+
+<form action="/account" method="post" id="new_user" >
+<u><center>ADD DEVELOPER</center></u>
+<br><br>
+Enter Developer Name : <input type=text placeholder="Enter a Unique Name" name="newdeveloper" style="position:absolute;top:24%;height:15%;width:40%;font:bold 20px arial,sans-serif;"></input>
+<br><br>
+<center>
+<input type="submit" style="height:15%;width:20%;position:absolute;left:30%;font:bold 15px arial,sans-serif;"></input>
+</center>
+</form>
+
+
+<form action="/account" method="post" id="delete_user" >
+<u><center>REMOVE DEVELOPER</center></u>
+<br><br>
+Enter Developer Name : <input type=text placeholder="Enter Developer's Name" name="developer" style="position:absolute;left:45%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;"></input>
+<br><br>
+Or
+<br><br>
+Enter Developer Login Id : <input type=text placeholder="Enter Developer's Login Id" name="developer2" style="position:absolute;top:75%;left:45%;height:15%;width:40%;font:bold 20px arial,sans-serif;"></input>
+<br><br>
+<center>
+<input type="submit" style="height:15%;width:20%;position:absolute;left:30%;font:bold 15px arial,sans-serif;"></input>
+</center>
+</form>
+
+<form action="/admin" method="post" id="search_dev">
+<u><center>SEARCH BY DEVEOPER</center></u>
+<br><br>
+Enter Developer Name : <input type=text placeholder="Enter Name" name="developername" style="position:absolute;top:24%;height:15%;width:40%;font:bold 20px arial,sans-serif;"></input>
+<br><br>
+<center>
+<input type="submit" name="submits" style="height:15%;width:20%;position:absolute;left:30%;font:bold 15px arial,sans-serif;"></input>
+</center>
+</form>
+
+
+<form action="/admin" method="post" id="search_account">
+<u><center>SEARCH BY ACCOUNT</center></u>
+<br><br>
+Enter Account Name : <input type=text placeholder="Enter Name" name="accountname" style="position:absolute;top:24%;height:15%;width:40%;font:bold 20px arial,sans-serif;"></input>
+<br><br>
+<center>
+<input type="submit" name="submits" style="height:15%;width:20%;position:absolute;left:30%;font:bold 15px arial,sans-serif;"></input>
+</center>
+</form>
+
+<h4 id="heading1">TOTAL ACCOUNTS: {{ param['alength'] }}</h4>
+<table id="accounts"  border="1" cellpadding="5px"  style="position:absolute;font:bold 20px arial,sans-serif;left:28%;top:30%;height:10%;width:50%;">
+<tr><th>Account No</th><th>Account Name</th></tr>
+{% for i in param['accountnames'] %}
+ <tr>
+ <td>{{ i['id']}}</td>
+ <td>{{ i['account_name']}}</td>
+ </tr>
+{% endfor %}
+</table>
+
+
+<h4 id="heading2">TOTAL DEVELOPERS: {{ param['dlength'] }}</h4>
+<table id="developers"  border="1" cellpadding="5px"  style="position:absolute;font:bold 20px arial,sans-serif;left:28%;top:30%;height:10%;width:50%;">
+<tr><th>Id</th><th>Developer Name</th><th>Login Id</th></tr>
+{% for i in param['developernames'] %}
+ <tr>
+ <td>{{ i['id']}}</td>
+ <td>{{ i['developer_name']}}</td>
+ <td>{{ i['loginid']}}</td>
+ </tr>
+{% endfor %}
+</table>
+
+<h4 id="heading3">TOTAL UPLOADED PACKAGES: {{ param['apklength'] }}</h4>
+
+<table id="uapk"  border="1" cellpadding="5px"  style="position:absolute;font:bold 20px arial,sans-serif;left:28%;top:45%;height:10%;width:50%;">
+<tr><th>Developer Name</th><th>Account Name</th><th>APK Name</th><th>Package Name</th><th>Version</th><th>Time</th></tr>
+{% for i in param['apks'] %}
+ <tr>
+ <td>{{ i['developer_name']}}</td>
+ <td>{{ i['account_name']}}</td>
+ <td>{{ i['apk_name']}}</td>
+ <td>{{ i['package_name']}}</td>
+ <td>{{ i['version']}}</td>
+ <td>{{ i['time']}}</td>
+ </tr>
+{% endfor %}
+</table>
+
+<form method="post"  id="updatecollisionform" action="/updatecollision">
+<p style="position:absolute;left:70%;top:22%;font:bold 20px arial,sans-serif;">UPDATE COLLISIONS</p>
+<input type=text placeholder="Enter Package Name" name="updateapkcollisions" style="position:absolute;left:70%;top:30%;font:bold 20px arial,sans-serif;"></input>
+<br>
+<input type=text placeholder="Enter version" name="updateapkcollisionsversion" style="position:absolute;left:70%;top:35%;font:bold 20px arial,sans-serif;"></input>
+<br>
+<input type="submit" value="UPDATE" id="updatecollisionsubmit" style="position:absolute ;height:5%;width:5%;left:75%;top:40%;"></input>
+</form>
+
+
+{% if param['searchdevlength'] %}
+<h4 id="heading4">TOTAL PACKAGES: {{ param['searchdevlength'] }}</h4>
+{% endif %}
+
+{% if param['searchdev'] %}
+<table id="duapk"  border="1" cellpadding="5px"  style="position:absolute;font:bold 20px arial,sans-serif;left:30%;top:30%;height:10%;width:50%;">
+<tr><th>Developer Name</th><th>Account Name</th><th>APK Name</th><th>Package Name</th><th>Version</th><th>Time</th></tr>
+{% for i in param['searchdev'] %}
+ <tr>
+ <td>{{ i['developer_name']}}</td>
+ <td>{{ i['account_name']}}</td>
+ <td>{{ i['apk_name']}}</td>
+ <td>{{ i['package_name']}}</td>
+ <td>{{ i['version']}}</td>
+ <td>{{ i['time']}}</td>
+ </tr>
+{% endfor %}
+</table>
+{% endif %}
+
+
+{% if param['searchaccountlength'] %}
+<h4 id="heading5">TOTAL PACKAGES: {{ param['searchaccountlength'] }}</h4>
+{% endif %}
+
+{% if param['searchaccount'] %}
+<table id="acapk"  border="1" cellpadding="5px"  style="position:absolute;font:bold 20px arial,sans-serif;left:28%;top:30%;height:10%;width:50%;">
+<tr><th>Account Name</th><th>Developer Name</th><th>APK Name</th><th>Package Name</th><th>Version</th><th>Time</th></tr>
+{% for i in param['searchaccount'] %}
+ <tr>
+ <td>{{ i['account_name']}}</td>
+ <td>{{ i['developer_name']}}</td>
+ <td>{{ i['apk_name']}}</td>
+ <td>{{ i['package_name']}}</td>
+ <td>{{ i['version']}}</td>
+ <td>{{ i['time']}}</td>
+ </tr>
+{% endfor %}
+</table>
+{% endif %}
+
+
+{% if param['accountexist'] %}
+<p id="existaccount" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Account Already Exists ! </p>
+{%  endif  %}
+
+{% if param['accountnotexist'] %}
+<p id="notexistaccount" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Account Does Not Exists ! </p>
+{%  endif  %}
+
+{% if param['developerexist'] %}
+<p id="existdeveloper" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Developer Already Exists ! </p>
+{%  endif  %}
+
+{% if param['developernotexist'] %}
+<p id="notexistdeveloper" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Developer Does Not Exists ! </p>
+{%  endif  %}
+
+{% if param['saveadmin'] %}
+<p id="adminsave" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Cannot Delete Admin ! </p>
+{%  endif  %}
+
+{% if param['invalidinput'] %}
+<p id="inputinvalid" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Invalid Input ! Please Try Again !</p>
+{%  endif  %}
+
+{% if param['accountcreate'] %}
+<p id="createaccount" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:green;">Account Created Successfully !</p>
+{%  endif  %}
+
+{% if param['accountdelete'] %}
+<p id="deleteaccount" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:green;">Account Deleted Successfully !</p>
+{%  endif  %}
+
+{% if param['developeradd'] %}
+<p id="adddeveloper" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:green;">Developer Added Successfully!</p>
+{%  endif  %}
+
+{% if param['developerdelete'] %}
+<p id="deletedeveloper" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:green;">Developer Deleted Successfully !</p>
+{%  endif  %}
+
+
+{% if param['devapk'] %}
+<p id="apkdev" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">No Uploaded Apks Found ! </p>
+{%  endif  %}
+
+{% if param['adminapkupload'] %}
+<p id="uploadapkadmin" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:green;">Package Successfully Uploaded! </p>
+{%  endif  %}
+
+{% if param['incorrect'] %}
+<p id="incorrectfile" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Incorrect File Type ! Please Retry !!</p>
+{%  endif  %}
+
+{% if param['canupdate'] %}
+<p id="testapk" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Cannot Update Collisions ! </p>
+{% endif %}
+
+{% if param['canupdate1'] %}
+<p id="testapk" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:green;"> Collisions Updated! </p>
+{% endif %}
+
+
+<form method="post" id="upload_apk" action="/upload" enctype="multipart/form-data">
+<u><center>UPLOAD TEST APK</center></u>
+<br><br>
+
+Select Account :
+<select name="acc" style="height:15%;width:60%;position:absolute;left:30%;font:bold 15px arial,sans-serif;">
+{% for i in param['accountnames'] %}
+<option value={{ i['account_name'] }}>{{ i['account_name'] }}</option>
+{% endfor %}
+</select>
+
+<br><br>
+Upload Apk:<input type="file" name="testapk" style="height:15%;width:60%;position:absolute;left:30%;font:bold 15px arial,sans-serif;"></input>
+<br><br>
+
+<input type="submit" style="height:15%;width:20%;position:absolute;left:30%;font:bold 15px arial,sans-serif;"></input>
+</form>
+
+{% if param['updateresource'] %}
+   <p style="position:absolute;left:40%" id="checkcollision">
+   UPDATE COLLISIONS
+   <br><br>
+   {% for j in param['updateresource'] %}
+       {{ j }}
+       <br>
+   {% endfor %}
+    </p>
+
+   <p>
+    <br><br>
+   <form method="POST" action="/update" id="selectcollision">
+
+   {% for j in param['updateresource'] %}
+   <input type="checkbox" style="position:absolute;left:60%;" name={{ j }}></input>
+   <br>
+   {% endfor %}
+   </p>
+   <br><br>
+   <input type="submit" style="position:absolute;left:50%;" id="updateresourcesubmit" ></input>
+   </form>
+{% endif %}
+
+
+</body>
+
+
+</html>
+

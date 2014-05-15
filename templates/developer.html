@@ -1,0 +1,581 @@
+<html>
+<head>
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+
+
+<title>Welcome to Developer Page</title>
+<script src="/static/javascripts/jquery.js"></script>
+
+<script type="text/javascript">
+function doo()
+{
+confirm('Are You Sure ?');
+}
+
+function open_win()
+{
+{% if param['emaildomain'] %}
+window.open({{param['emaildomain']|safe}});
+{% endif %}
+}
+</script>
+
+<script>
+
+$(document).ready(function(){
+  
+  $("#upload_apk").hide();
+  $("#clash").hide();
+  $("#uploadfinal").hide();
+  $("#clash1").hide();
+  $("#change_pass").hide();
+  $("#collresults").hide();
+  $("#collresults1").hide();
+  $("#collresults2").hide();
+  $("#updatecollisionform").hide();
+  $("#sendresults").hide();
+
+    $("#td0").click(function(){
+    $("#upload_apk").show();
+    $("#clash").hide();
+    $("#uploadfinal").hide();
+    $("#clash1").hide();
+    $("#change_pass").hide();
+    $("#incorrectfile").hide();
+    $("#uploadsucess1").hide();
+    $("#uploadsucess2").hide();
+    $("#testapk").hide();
+    $("#passchange1").hide();
+    $("#passchange2").hide();
+    $("#passchange3").hide();
+    $("#collresults1").hide();
+    $("#collresults2").hide();
+    $("#collresults3").hide();
+    $("#updatecollisionform").hide();
+    $("#noupdatecollisions").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#sendresults").hide();
+    $("#verifyemail").hide();
+         });
+
+    $("#td2").click(function(){
+    $("#upload_apk").hide();
+    $("#clash").show();
+    $("#uploadfinal").show();
+    $("#clash1").hide();
+    $("#change_pass").hide();
+    $("#incorrectfile").hide();
+    $("#uploadsucess1").hide();
+    $("#uploadsucess2").hide();
+    $("#testapk").hide();
+    $("#passchange1").hide();
+    $("#passchange2").hide();
+    $("#passchange3").hide();
+    $("#collresults1").show();
+    $("#collresults2").show();
+    $("#collresults3").show();
+    $("#updatecollisionform").hide();
+    $("#noupdatecollisions").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#sendresults").hide();
+    $("#verifyemail").hide();
+    });
+
+    $("#td1").click(function(){
+    $("#upload_apk").hide();
+    $("#clash").hide();
+    $("#uploadfinal").hide();
+    $("#clash1").show();
+    $("#change_pass").hide();
+    $("#incorrectfile").hide();
+    $("#uploadsucess1").hide();
+    $("#uploadsucess2").hide();
+    $("#testapk").hide();
+    $("#passchange1").hide();
+    $("#passchange2").hide();
+    $("#passchange3").hide();
+    $("#collresults1").hide();
+    $("#collresults2").hide();
+    $("#collresults3").hide();
+    $("#updatecollisionform").hide();
+    $("#noupdatecollisions").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#sendresults").hide();
+    $("#verifyemail").hide();
+    });
+
+    $("#td3").click(function(){
+    $("#upload_apk").hide();
+    $("#clash").hide();
+    $("#uploadfinal").hide();
+    $("#clash1").hide();
+    $("#change_pass").hide();
+    $("#incorrectfile").hide();
+    $("#uploadsucess1").hide();
+    $("#uploadsucess2").hide();
+    $("#testapk").hide();
+    $("#passchange1").hide();
+    $("#passchange2").hide();
+    $("#passchange3").hide();
+    $("#collresults1").hide();
+    $("#collresults2").hide();
+    $("#collresults3").hide();
+    $("#updatecollisionform").hide();
+    $("#noupdatecollisions").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#sendresults").show();
+    $("#verifyemail").hide();
+   });
+
+    $("#td4").click(function(){
+    $("#upload_apk").hide();
+    $("#clash").hide();
+    $("#uploadfinal").hide();
+    $("#clash1").hide();
+    $("#change_pass").show();
+    $("#incorrectfile").hide();
+    $("#uploadsucess1").hide();
+    $("#uploadsucess2").hide();
+    $("#testapk").hide();
+    $("#passchange1").hide();
+    $("#passchange2").hide();
+    $("#passchange3").hide();
+    $("#collresults1").hide();
+    $("#collresults2").hide();
+    $("#collresults3").hide();
+    $("#updatecollisionform").hide();
+    $("#noupdatecollisions").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#sendresults").hide();
+    $("#verifyemail").hide();
+    });
+
+   $("#td5").click(function(){
+    $("#upload_apk").hide();
+    $("#clash").hide();
+    $("#uploadfinal").hide();
+    $("#clash1").show();
+    $("#change_pass").hide();
+    $("#incorrectfile").hide();
+    $("#uploadsucess1").hide();
+    $("#uploadsucess2").hide();
+    $("#testapk").hide();
+    $("#passchange1").hide();
+    $("#passchange2").hide();
+    $("#passchange3").hide();
+    $("#collresults1").hide();
+    $("#collresults2").hide();
+    $("#collresults3").hide();
+    $("#updatecollisionform").show();
+    $("#noupdatecollisions").hide();
+    $("#selectcollision").hide();
+    $("#checkcollision").hide();
+    $("#sendresults").hide();
+    $("#verifyemail").hide();
+   });
+
+    $("#updatecollsionsubmit").click(function(){
+    $("#upload_apk").hide();
+    $("#clash").hide();
+    $("#uploadfinal").hide();
+    $("#clash1").show();
+    $("#change_pass").hide();
+    $("#incorrectfile").hide();
+    $("#uploadsucess1").hide();
+    $("#uploadsucess2").hide();
+    $("#testapk").hide();
+    $("#passchange1").hide();
+    $("#passchange2").hide();
+    $("#passchange3").hide();
+    $("#collresults1").hide();
+    $("#collresults2").hide();
+    $("#collresults3").hide();
+    $("#updatecollisionform").hide();
+    $("#noupdatecollisions").show();
+    $("#checkcollision").hide();
+    $("#sendresults").hide();
+    });
+
+   $("#updateresourcesubmit").click(function(){
+
+     $("#checkcollision").show();
+   });
+
+
+   });
+
+</script>
+</head>
+<style>
+#a
+{
+height:30%;
+width:30%;
+left:0px;
+top:20px;
+background-repeat:no-repeat;
+}
+
+#b
+{
+left:0px;
+top:0px;
+width:100%;
+height:1%;
+}
+
+#table1
+{
+position:absolute;
+font:bold 15px arial,sans-serif;
+left:2%;
+top:30%;
+}
+
+#buttons
+{
+position:absolute;
+font:bold 15px arial,sans-serif;
+left:45%;
+top:50%;
+height:4%;
+width:10%;
+}
+
+#c
+{
+position:absolute;
+font:bold 25px arial,sans-serif;
+left:30%;
+top:15%;
+}
+#c1
+{
+position:absolute;
+font:bold 25px arial,sans-serif;
+left:45%;
+top:10%;
+}
+
+
+#d
+{
+position:absolute;
+font:bold 15px arial,sans-serif;
+left:90%;
+top:5%;
+}
+
+#upload_apk,#change_pass
+{
+position:absolute;
+font:bold 20px arial,sans-serif;
+left:30%;
+top:30%;
+height:30%;
+width:50%;
+}
+
+#clash,#clash1
+{
+position:absolute;
+font:bold 20px arial,sans-serif;
+left:22%;
+top:25%;
+height:200%;
+width:75%;
+}
+
+body
+</style
+
+<body>
+<p id="b"></p>
+
+<p id="a"></p>
+
+<p id="c1">Welcome , {{param['Developer'] }} </p>
+<p id="c">Your last activity was at : {{ log[0]['logintime'] }} </p>
+
+<table id="table1" border="1" cellpadding="5px" style="cursor:pointer;">
+<tr>
+<td id="td0">UPLOAD TEST PACKAGES</td>
+</tr>
+<tr>
+<td id="td1">VIEW UPLOADED PACKAGES</td>
+</tr>
+<tr>
+<td id="td2">VIEW TEST RESULTS</td>
+</tr>
+<tr>
+<td id="td3">SEND RESULTS</td>
+</tr>
+<tr>
+<td id="td4">CHANGE PASSWORD</td>
+</tr>
+
+
+
+</table>
+
+<p id="d" onclick="doo();"><a href="/logout">SIGNOUT</a></p>
+
+<form method="post" id="upload_apk" action="/upload" enctype="multipart/form-data">
+<u><center>UPLOAD TEST APK</center></u>
+<br><br>
+
+Select Account :
+<select name="acc" style="height:15%;width:60%;position:absolute;left:30%;font:bold 15px arial,sans-serif;">
+{% for i in param['accountnames'] %}
+<option value={{ i['account_name'] }}>{{ i['account_name'] }}</option>
+{% endfor %}
+</select>
+
+<br><br>
+Upload Apk:<input type="file" name="testapk" style="height:15%;width:60%;position:absolute;left:30%;font:bold 15px arial,sans-serif;"></input>
+<br><br>
+
+<input type="submit" style="height:15%;width:20%;position:absolute;left:30%;font:bold 15px arial,sans-serif;"></input>
+</form>
+
+{% if param['incorrect'] %}
+<p id="incorrectfile" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Incorrect File Type ! Please Retry !!</p>
+{%  endif  %}
+
+{% if param['uploadsucess1'] %}
+<p id="incorrectfile" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:green;">Package Successfully Uploaded ! SEE -> UPLOADED Packages </p>
+{%  endif  %}
+
+{% if param['uploadsucess2'] %}
+<p id="incorrectfile" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">APK Version Already Exists !!</p>
+{%  endif  %}
+
+{% if param['testsucess'] %}
+<p id="testapk" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:green;">Package Successfully Tested ! SEE -> TEST RESULTS</p>
+{%  endif  %}
+
+{% if param['passchange1'] %}
+<p id="testapk" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Incorrect Password ! Try Again !!</p>
+{%  endif  %}
+
+{% if param['passchange2'] %}
+<p id="testapk" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Passwords Do Not Match ! Try Again!!</p>
+{%  endif  %}
+
+{% if param['passchange3'] %}
+<p id="testapk" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:green;">Password Changed Successfully ! </p>
+{%  endif  %}
+
+
+{% if param['canupdate'] %}
+<p id="testapk" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Cannot Update Collisions ! </p>
+{% endif %}
+
+{% if param['canupdate1'] %}
+<p id="testapk" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:green;"> Collisions Updated! </p>
+{% endif %}
+
+{% if param['changelogempty'] %}
+<p id="testapk" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Change Log is Empty! </p>
+{% endif %}
+
+{% if param['changelogempty1'] %}
+<p id="testapk" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:green;">Email Sent Successfully! </p>
+{% endif %}
+
+{% if param['emailfrom'] %}
+<p id="testapk" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Email Field is Empty !  </p>
+{% endif %}
+
+{% if param['emailfrom1'] %}
+<p id="testapk" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Email Could Not be Sent ! </p>
+{% endif %}
+
+{% if param['emailfrom2'] %}
+<form method="post" id="verifyemail" action="/verifyemail">
+<p id="mailverify" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;">Please Verify Your Email Here: </p>
+
+<input type="button" style="height:10%;width:10%;position:absolute;top:30%;left:60%;font:bold 15px arial,sans-serif;" value="Click Here" onclick="open_win();"></input>
+
+<input type="submit" style="height:10%;width:3i0%;position:absolute;top:50%;left:40%;font:bold 15px arial,sans-serif;" value="CLICK HERE IF EMAIL VERIFIED"></input>
+</form>
+{% endif %}i
+
+{% if param['emailfrom3'] %}
+<p id="testapk" style="position:absolute;left:35%;top:30%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Email was not verified ! </p>
+{% endif %}
+
+
+<form method="post" id="change_pass" action="/changepass">
+<u><center>CHANGE PASSWORD</center></u>
+<br><br>
+Enter Old Password : <input type=password name="oldpass" placeholder="Enter Old Password" style="position:absolute;left:40%;top:35%;height:15%;width:40%;font:bold 20px arial,sans-serif;"></input>
+<br><br>
+Enter New Password : <input type=password name="newpass" placeholder="Enter New Password" style="position:absolute;left:40%;top:60%;height:15%;width:40%;font:bold 20px arial,sans-serif;"></input>
+<br><br>
+Re-enter  Password : <input type=password name="renewpass" placeholder="Enter New Password" style="position:absolute;left:40%;top:85%;height:15%;width:40%;font:bold 20px arial,sans-serif;"></input>
+<br><br>
+<input type="submit" style="height:15%;width:20%;position:absolute;left:30%;font:bold 15px arial,sans-serif;"></input>
+</form>
+
+
+<p id="clash">
+
+{% if param['apkname'] %}
+LAST TESTED APK :
+{{ param['apkname'] }}
+<br><br>
+{% endif %}
+{% if param['duration'] %}
+DONE ON :
+{{ param['duration'] }}
+<br><br>
+{% endif %}
+
+{% if param['collstatus'] %}
+RESULT :
+{{ param['collstatus'] }}
+<br><br>
+{% endif %}
+
+{% if param['collstatus1'] %}
+RESULT :
+{{ param['collstatus1'] }}
+<form method="post"  action="/showupload">
+<input type="submit" value="UPLOAD" id="uploadfinal" style="position:absolute ;height:7%;width:7%;top:30%;left:75%;">
+</input>
+</form>
+<br><br>
+{% endif %}
+
+
+{% if param['collisions'] %}
+THE FOLLOWING RESOURCES CLASH :-
+<br><br>
+
+{% for i in param['collisions'].items() %}
+
+    <br><br>
+    For account :{{ i[0] }}
+    <br><br>
+
+    No Importance:
+    <br>
+   {% for j in i[1]['notclash'] %}
+       {{ j }}
+       <br>
+   {% endfor %}
+
+    <br><br>
+
+    Importance:
+    <br>
+   {% for j in i[1]['clash'] %}
+       {{ j }}
+       <br>
+   {% endfor %}
+{% endfor %}
+
+<br><br>
+
+<form method="post"  action="/showupload">
+<input type="submit" value="UPLOAD" id="uploadfinal" style="position:absolute ;height:7%;width:7%;top:30%;left:75%;">
+</input>
+</form>
+{% endif %}
+</p>
+
+<p id="clash1">
+{% if param['udata1'] %}
+
+
+UPLOADED APKS
+<br><br><br><br><br><br>
+<table id="table2" border="1" cellpadding="5px" style="position:absolute;left:2%;">
+<tr><th>APK NAME</th><th>ACCOUNT NAME</th><th>APK VERSION</th><th>PACKAGE NAME</th></tr>
+{% for i in param['udata1'] %}
+<tr><td>{{ i['apk_name']}}</td><td>{{ i['account_name']}}</td><td>{{ i['version']}}</td><td>{{ i['package_name']}}</td></tr>
+{% endfor %}
+</table>
+
+<form method="post"  id="updatecollisionform" action="/updatecollision">
+<p style="position:absolute;left:70%;top:22%;font:bold 20px arial,sans-serif;">UPDATE COLLISIONS</p>
+<input type=text placeholder="Enter Package Name" name="updateapkcollisions" style="position:absolute;left:70%;top:30%;font:bold 20px arial,sans-serif;"></input>
+<br>
+<input type=text placeholder="Enter version" name="updateapkcollisionsversion" style="position:absolute;left:70%;top:35%;font:bold 20px arial,sans-serif;"></input>
+<br>
+<input type="submit" value="UPDATE" id="updatecollisionsubmit" style="position:absolute ;height:5%;width:5%;left:75%;top:40%;"></input>
+</form>
+
+
+<form method="post"  id="sendresults" action="/sendemail">
+<p style="position:absolute;left:45%;top:25%;font:bold 20px arial,sans-serif;">SEND YOUR RESULTS</p>
+
+<p style="position:absolute;left:28%;font:bold 20px arial,sans-serif;">Email Address :</p>
+<br>
+<input type=text placeholder="Enter Your Email" name="askemail" style="position:absolute;left:40%;font:bold 20px arial,sans-serif;"></input>
+<br><br>
+
+<p style="position:absolute;left:30%;font:bold 20px arial,sans-serif;">Select APK  :</p>
+
+<select name="sendemail" style="height:5%;width:20%;position:absolute;top:50%;left:40%;font:bold 15px arial,sans-serif;">
+{% for i in param['udata1'] %}
+<option value={{i['apk_name']+"#"+i['version']}}>{{i['apk_name']+"  "+i['version']}}</option>
+{% endfor %}
+</select>
+
+<br><br><br><br>
+<p style="position:absolute;left:30%;font:bold 20px arial,sans-serif;">Change Log :</p><textarea rows="4" cols="15" name="changelog" style="position:absolute;left:40%;font:bold 20px arial,sans-serif;"></textarea>
+<br><br><br><br><br><br>
+
+<input type="submit" value="SEND EMAIL" id="sendemailresult" style="position:absolute ;height:5%;width:10%;left:45%;"></input>
+</form>
+
+{% endif %}
+
+{% if param['udata'] %}
+{{ param['udata'] }}
+{% endif %}
+
+{% if param['updateresource'] %}
+   <p style="position:absolute;left:40%" id="checkcollision">
+   UPDATE COLLISIONS
+   <br><br>
+   {% for j in param['updateresource'] %}
+       {{ j }}
+       <br>
+   {% endfor %}
+    </p>
+
+   <p>
+    <br><br>
+   <form method="POST" action="/update" id="selectcollision">
+
+   {% for j in param['updateresource'] %}
+   <input type="checkbox" style="position:absolute;left:60%;" name={{ j }}></input>
+   <br>
+   {% endfor %}
+   </p>
+   <br><br>
+   <input type="submit" style="position:absolute;left:50%;" id="updateresourcesubmit" ></input>
+   </form>
+{% endif %}
+
+
+</p>
+
+
+
+</body>
+
+
+</html>
+
+

@@ -1,0 +1,76 @@
+<html>
+<head>
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+
+<title>Welcome to APK Management Page</title>
+<script type="text/javascript">
+function doo()
+{
+alert('Yes');
+}
+</script>
+</head>
+
+<style>
+#a
+{
+height:30%;
+width:30%;
+left:0px;
+top:20px;
+background-repeat:no-repeat;
+}
+
+#b
+{
+left:0px;
+top:0px;
+width:100%;
+height:1%;
+}
+
+#c
+{
+position:absolute;
+font:bold 20px arial,sans-serif;
+left:30%;
+top:30%;
+height:30%;
+width:50%;
+}
+
+body
+{
+}
+</style>
+
+<body>
+<p id="b">
+</p>
+
+<p id="a">
+</p>
+
+<p id="d" style="height:15%;width:20%;position:absolute;top:20%;left:45%;font:bold 30px arial,sans-serif;"><u><b>LOGIN </u></b></p>
+
+
+<form  action="/login" id="c" method='post'>
+<br><br>
+USERNAME : <input type="text" name="logins" placeholder="Enter Username"  style="position:absolute;left:25%;top:25%;height:15%;width:40%;font:bold 20px arial,sans-serif;"></input>
+<br><br><br>
+PASSWORD : <input type="password" name="passwords" placeholder="Enter Password" style="position:absolute;top:55%;left:25%;height:15%;width:40%;font:bold 20px arial,sans-serif;"></input>
+<input type="submit" name="submits" style="height:15%;width:20%;position:absolute;top:80%;left:30%;font:bold 15px arial,sans-serif;" ></input>
+</form>
+
+{% if fails %}
+<p style="position:absolute;left:35%;top:60%;height:15%;width:40%;font:bold 20px arial,sans-serif;color:red;">Your login failed ! Please Retry !!</p>
+{%  endif  %}
+
+</body>
+
+
+</html>
+
+
